@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "plugin:storybook/recommended",
+    // New
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended"
+  ],
+  "globals": {
+    "React": "readonly"
+  },
+  // New
+  "overrides": [
+    {
+      "files": [
+        "*.stories.@(ts|tsx|js|jsx|mjs|cjs)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "rules": {
+        // example of overriding a rule
+        "storybook/hierarchy-separator": "error"
+      },
+      "extends": ["plugin:testing-library/react"]
+    }
+  ],
+  "plugins": ["testing-library"],
+  "rules": {
+    "no-unused-vars": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off"
+  }
+}

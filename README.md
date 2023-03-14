@@ -12,7 +12,69 @@ ReactJs Boilerplate Using NexJs/TypeScript
 * tailwindcss (^3.*)
 * next (^13.*)
 
-## App Structure
+## Install, Configure & Run
+Below mentioned are the steps to install, configure & run in your platform/distributions.
+
+### Install
+```bash
+# Run command to clone the repo.
+git clone https://github.com/anhht83/fs_boilerplate_frontend.git
+
+# Goto the cloned project folder, run command
+cd fs_boilerplate_client
+
+# Run command to install packages dependencies.
+yarn install
+
+# [Optional] Setup husky with GIT, run command
+yarn prepare
+```
+
+### Configure
+Edit your `.env.xxx` files to config server connections
+```bash
+# API server
+NEXT_PUBLIC_ROOT_API=http://localhost:3001/v1
+# Socket server
+NEXT_PUBLIC_SOCKET_API=http://localhost:3001
+```
+### Run
+```bash
+# Run development
+yarn dev
+ 
+# Run production
+yarn build:start
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Test, Storybook & Code format validation
+```bash
+# Run Storybook
+yarn storybook
+
+# Run test
+yarn test
+
+# Validate code
+yarn lint
+
+# Format code
+yarn pretty
+```
+
+### Build code and deployment
+```bash
+# Build code to "dist" folder
+yarn build
+
+# Run production
+yarn start
+```
+
+## Development
+
+### App Structure
 ```bash
 ├── .storybook
 │   ├── main.js
@@ -87,68 +149,6 @@ ReactJs Boilerplate Using NexJs/TypeScript
 ├── README.md
 └── tsconfig.json
 ```
-
-## Install, Configure & Run
-Below mentioned are the steps to install, configure & run in your platform/distributions.
-
-### Install
-```bash
-# Run command to clone the repo.
-git clone https://github.com/anhht83/fs_boilerplate_frontend.git
-
-# Goto the cloned project folder, run command
-cd fs_boilerplate_client
-
-# Run command to install packages dependencies.
-yarn install
-
-# [Optional] Setup husky with GIT, run command
-yarn prepare
-```
-
-### Configure
-Edit your `.env.xxx` files to config server connections
-```bash
-# API server
-NEXT_PUBLIC_ROOT_API=http://localhost:3001/v1
-# Socket server
-NEXT_PUBLIC_SOCKET_API=http://localhost:3001
-```
-### Run
-```bash
-# Run development
-yarn dev
- 
-# Run production
-yarn build:start
-```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-### Test, Storybook & Code format validation
-```bash
-# Run Storybook
-yarn storybook
-
-# Run test
-yarn test
-
-# Validate code
-yarn lint
-
-# Format code
-yarn pretty
-```
-
-### Build code and deployment
-```bash
-# Build code to "dist" folder
-yarn build
-
-# Run production
-yarn start
-```
-
-## Development
 
 ### Learn More
 

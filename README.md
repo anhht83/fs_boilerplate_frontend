@@ -1,4 +1,4 @@
-# Client
+# Frontend
 ReactJs Boilerplate Using NexJs/TypeScript
 
 ## Global Requisites

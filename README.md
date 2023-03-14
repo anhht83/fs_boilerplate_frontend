@@ -158,5 +158,4 @@ To learn more about Next.js, Storybook.js, ... take a look at the following reso
 - [Storybook.js Documentation](https://storybook.js.org/docs) - learn about Storybook.js.
 
 # Connect
-=========
 **Anh Tuan Hoang** <anhht83@gmail.com>  https://github.com/anhht83
